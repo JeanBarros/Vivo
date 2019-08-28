@@ -14,7 +14,12 @@ To build the master page directly from this HTML file, simply edit the page as y
 <!DOCTYPE html >
 <SharePoint:SPHtmlTag runat="server" id="SPHtmlTag" dir="&lt;%$Resources:wss,multipages_direction_dir_value%&gt;">
     <head runat="server">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta http-equiv="X-UA-Compatible" content="IE=10" />
+        
+        
+        
+        
         <meta name="GENERATOR" content="Microsoft SharePoint" />
         <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
         <meta http-equiv="Expires" content="0" />
@@ -65,7 +70,7 @@ To build the master page directly from this HTML file, simply edit the page as y
         
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        
         
         <!-- Bootstrap CSS CDN -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous" />
@@ -73,11 +78,16 @@ To build the master page directly from this HTML file, simply edit the page as y
         <link rel="stylesheet" href="/sites/ClassicPortal/Style Library/vivo.css" />
         <!-- Font Awesome JS -->
         <script src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous">//<![CDATA[
+        
         //]]></script>
         <script src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous">//<![CDATA[
+        
         //]]></script>
         </head>
     <body onhashchange="if (typeof(_spBodyOnHashChange) != 'undefined') _spBodyOnHashChange();"><SharePoint:SPClientIDGenerator runat="server" ServerControlID="DeltaPlaceHolderMain;DeltaPlaceHolderPageTitleInTitleArea;DeltaPlaceHolderUtilityContent" /><SharePoint:ImageLink runat="server" /><SharePoint:SharePointForm onsubmit="if (typeof(_spFormOnSubmitWrapper) != 'undefined') {return _spFormOnSubmitWrapper();} else {return true;}" runat="server"><asp:ScriptManager id="ScriptManager" runat="server" EnablePageMethods="false" EnablePartialRendering="true" EnableScriptGlobalization="false" EnableScriptLocalization="true" />
+        
+        
+        
         <SharePoint:SPSecurityTrimmedControl runat="server" HideFromSearchCrawler="true" EmitDiv="true">
             <div id="TurnOnAccessibility" style="display:none" class="s4-notdlg noindex">
                 <a id="linkTurnOnAcc" href="#" class="ms-accessible ms-acc-button" onclick="SetIsAccessibilityFeatureEnabled(true);UpdateAccessibilityUI();document.getElementById('linkTurnOffAcc').focus();return false;">
@@ -93,12 +103,14 @@ To build the master page directly from this HTML file, simply edit the page as y
             </div>
         </SharePoint:SPSecurityTrimmedControl>
         <div id="ms-designer-ribbon">
-            <PublishingRibbon:PublishingRibbon runat="server" />            
+            <PublishingRibbon:PublishingRibbon runat="server" />
+            
         </div>
         <SharePoint:SPSecurityTrimmedControl runat="server" AuthenticationRestrictions="AnonymousUsersOnly">
             <wssucw:Welcome runat="server" EnableViewState="false">
             </wssucw:Welcome>
-        </SharePoint:SPSecurityTrimmedControl>        
+        </SharePoint:SPSecurityTrimmedControl>
+        
         <div id="s4-workspace">
             <div id="s4-bodyContainer">
                 <div class="wrapper">
@@ -107,24 +119,32 @@ To build the master page directly from this HTML file, simply edit the page as y
                         <div class="sidebar-header">
                             <!-- <h3>Bootstrap Sidebar</h3> -->
                             <strong>BS
+                            
                             </strong>
                         </div>
                         <ul class="list-unstyled components">
                             <li class="active">
                                 <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                                     <i class="fas fa-home">
-                                    </i>Home</a>
-                                        <ul class="collapse list-unstyled" id="homeSubmenu">
+                                    </i>
+
+
+                        Home
+                                                                                    </a>
+                                <ul class="collapse list-unstyled" id="homeSubmenu">
                                     <li>
                                         <a href="#">Home 1
+                                        
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#">Home 2
+                                        
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#">Home 3
+                                        
                                         </a>
                                     </li>
                                 </ul>
@@ -132,21 +152,32 @@ To build the master page directly from this HTML file, simply edit the page as y
                             <li>
                                 <a href="#">
                                     <i class="fas fa-briefcase">
-                                    </i>About</a>
-                                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                                    </i>
+
+
+                        About
+                                                                                    </a>
+                                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                                     <i class="fas fa-copy">
-                                    </i>Pages</a>
+                                    </i>
+
+
+                        Pages
+                                                                                    </a>
                                 <ul class="collapse list-unstyled" id="pageSubmenu">
                                     <li>
                                         <a href="#">Page 1
+                                        
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#">Page 2
+                                        
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#">Page 3
+                                        
                                         </a>
                                     </li>
                                 </ul>
@@ -154,28 +185,40 @@ To build the master page directly from this HTML file, simply edit the page as y
                             <li>
                                 <a href="#">
                                     <i class="fas fa-image">
-                                    </i>Portfolio</a>
+                                    </i>
+
+
+                        Portfolio
+                                                                                    </a>
                             </li>
                             <li>
                                 <a href="#">
                                     <i class="fas fa-question">
-                                    </i>FAQ</a>
+                                    </i>
+
+
+                        FAQ
+                                                                                    </a>
                             </li>
                             <li>
                                 <a href="#">
                                     <i class="fas fa-paper-plane">
-                                    </i>Contact</a>
+                                    </i>
+
+
+                        Contact
+                                                                                    </a>
                             </li>
                         </ul>
                     </nav>
-                    <!-- End Sidebar  -->
-                    <!-- Topbar -->
+                    <!-- Topnavbar  -->
                     <nav class="navbar navbar-expand-lg navbar-light bg-light">
                         <div class="container-fluid">
                             <button type="button" id="sidebarCollapse" class="btn btn-info">
                                 <i class="fas fa-align-left">
                                 </i>
                                 <span>Toggle Sidebar
+                                
                                 </span>
                             </button>
                             <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -183,53 +226,83 @@ To build the master page directly from this HTML file, simply edit the page as y
                                 </i>
                             </button>
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <div data-name="SiteTitle"><SharePoint:AjaxDelta runat="server">
-                                <SharePoint:SPLinkButton runat="server" NavigateUrl="~site/">
-                                <SharePoint:ProjectProperty Property="Title" runat="server" /></SharePoint:SPLinkButton></SharePoint:AjaxDelta>
-                            </div>
+                                <div data-name="SiteTitle">
+                                    
+                                    
+                                    <SharePoint:AjaxDelta runat="server">
+                                        
+                                        <SharePoint:SPLinkButton runat="server" NavigateUrl="~site/">
+                                            
+                                            <SharePoint:ProjectProperty Property="Title" runat="server">
+                                                
+                                            </SharePoint:ProjectProperty>
+                                            
+                                        </SharePoint:SPLinkButton>
+                                        
+                                    </SharePoint:AjaxDelta>
+                                    
+                                </div>
                                 <ul class="nav navbar-nav ml-auto">
                                     <li class="nav-item active">
                                         <div data-name="TopNavigationNoFlyoutWithStartNode">
+                                            
+                                            
                                             <SharePoint:AjaxDelta runat="server" CssClass="ms-displayInline ms-core-navigation ms-dialogHidden" BlockElement="True" ID="DeltaTopNavigation">
-                                            <SharePoint:DelegateControl runat="server" Id="topNavigationDelegate" ControlId="TopNavigationDataSource">    
-                                            <Template_Controls>
-                                            <asp:SiteMapDataSource ShowStartingNode="True" SiteMapProvider="SPNavigationProvider" ID="topSiteMap" runat="server" StartingNodeUrl="sid:1002">
-                                                </asp:SiteMapDataSource>
-                                                </Template_Controls>
+                                                
+                                                <SharePoint:DelegateControl runat="server" Id="topNavigationDelegate" ControlId="TopNavigationDataSource">
+                                                    
+                                                    <Template_Controls>
+                                                        <asp:SiteMapDataSource ShowStartingNode="True" SiteMapProvider="SPNavigationProvider" ID="topSiteMap" runat="server" StartingNodeUrl="sid:1002">
+                                                        </asp:SiteMapDataSource>
+                                                    </Template_Controls>
                                                 </SharePoint:DelegateControl>
-                                                <a name="startNavigation"></a>
+                                                <a name="startNavigation">
+                                                </a>
                                                 <asp:ContentPlaceHolder ID="PlaceHolderTopNavBar" runat="server">
-                                                <SharePoint:AspMenu runat="server" UseSeparateCss="false" AdjustForShowStartingNode="False" StaticDisplayLevels="2" AccessKey="1" SkipLinkText="" EnableViewState="False" MaximumDynamicDisplayLevels="0" UseSimpleRendering="True" DataSourceID="topSiteMap" Orientation="Horizontal" ID="TopNavigationMenu" />
-                                            </asp:ContentPlaceHolder>
+                                                    <SharePoint:AspMenu runat="server" UseSeparateCss="false" AdjustForShowStartingNode="False" StaticDisplayLevels="2" AccessKey="1" SkipLinkText="" EnableViewState="False" MaximumDynamicDisplayLevels="0" UseSimpleRendering="True" DataSourceID="topSiteMap" Orientation="Horizontal" ID="TopNavigationMenu">
+                                                        
+                                                    </SharePoint:AspMenu>
+                                                </asp:ContentPlaceHolder>
+                                                
                                             </SharePoint:AjaxDelta>
-                                        </div>                                        
-                                    </li>                                        
+                                            
+                                        </div>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
                     </nav>
-                    <!-- End Topbar -->
-                    <div class="footer">
-                        <p>Footer</p>
+                    <!-- Topnavbar  -->
+                        <div data-name="ContentPlaceHolderMain" id="ContentPlaceHolderMain">
+                            
+                            
+                            <SharePoint:AjaxDelta ID="DeltaPlaceHolderMain" IsMainContent="true" runat="server">
+                                <asp:ContentPlaceHolder ID="PlaceHolderMain" runat="server">
+                                    <div class="DefaultContentBlock" style="border:medium black solid; background:yellow; color:black; margin:20px; padding:10px;">
+		                                This div, which you should delete, represents the content area that your Page Layouts and pages will fill. Design your Master Page around this content placeholder.
+                                    </div>
+                                </asp:ContentPlaceHolder>
+                            </SharePoint:AjaxDelta>
+                            
+                        </div>
+                    <div class="footer">Footer
+                            <ul>
+                                    <li>logo 1</li>
+                                    <li>logo </li>
+                                </ul>    
                     </div>
-                    <div data-name="ContentPlaceHolderMain">
-                        <SharePoint:AjaxDelta ID="DeltaPlaceHolderMain" IsMainContent="true" runat="server">
-                            <asp:ContentPlaceHolder ID="PlaceHolderMain" runat="server">
-                                <div class="DefaultContentBlock" style="border:medium black solid; background:yellow; color:black; margin:20px; padding:10px;">
-                                    This div, which you should delete, represents the content area that your Page Layouts and pages will fill. Design your Master Page around this content placeholder.		        
-                                </div>
-                            </asp:ContentPlaceHolder>
-                        </SharePoint:AjaxDelta>		                    
-                    </div>                    
                 </div>
                 <!-- jQuery CDN - Slim version (=without AJAX) -->
                 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">//<![CDATA[
+                
                 //]]></script>
                 <!-- Popper.JS -->
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous">//<![CDATA[
+                
                 //]]></script>
                 <!-- Bootstrap JS -->
                 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous">//<![CDATA[
+                
                 //]]></script>
                 <script type="text/javascript">//<![CDATA[
         $(document).ready(function () {
@@ -238,7 +311,8 @@ To build the master page directly from this HTML file, simply edit the page as y
             });
         });
     
-                //]]></script>                
+                
+                //]]></script>
             </div>
         </div>
     <SharePoint:AjaxDelta id="DeltaFormDigest" BlockElement="true" runat="server"><asp:ContentPlaceHolder id="PlaceHolderFormDigest" runat="server"><SharePoint:formdigest runat="server" /></asp:ContentPlaceHolder></SharePoint:AjaxDelta></SharePoint:SharePointForm><SharePoint:AjaxDelta id="DeltaPlaceHolderUtilityContent" runat="server"><asp:ContentPlaceHolder id="PlaceHolderUtilityContent" runat="server" /></SharePoint:AjaxDelta><asp:ContentPlaceHolder id="PlaceHolderTitleAreaClass" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderTitleBreadcrumb" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderGlobalNavigationSiteMap" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderGlobalNavigation" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderSearchArea" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderLeftNavBar" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderHorizontalNav" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderLeftNavBarDataSource" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderCalendarNavigator" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderLeftActions" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderLeftNavBarTop" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderSiteName" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderPageTitleInTitleArea" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderPageDescription" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderPageImage" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderTitleLeftBorder" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderMiniConsole" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderTitleRightMargin" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderTitleAreaSeparator" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderNavSpacer" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderLeftNavBarBorder" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderBodyLeftBorder" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderBodyRightMargin" Visible="False" runat="server" /><asp:ContentPlaceHolder id="WSSDesignConsole" Visible="False" runat="server" /><asp:ContentPlaceHolder id="SPNavigation" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderQuickLaunchTop" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderQuickLaunchBottom" Visible="False" runat="server" /></body>
