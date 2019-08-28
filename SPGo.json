@@ -1,0 +1,6 @@
+{
+    "sourceDirectory": "src",
+    "sharePointSiteUrl": "https://tarcisiopobal.sharepoint.com/sites/ClassicPortal",
+    "publishingScope": "Major",
+    "authenticationType": "Digest"
+}

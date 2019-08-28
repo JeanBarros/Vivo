@@ -1,0 +1,329 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+.wrapper a,
+.wrapper a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.wrapper a:hover{
+    text-decoration: underline;
+}
+
+.header{
+    padding: 0;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    background-color: #204b67;
+    color: rgb(156, 156, 156);
+}
+
+.ml-auto, .mx-auto {
+    margin-left: 0 !important;
+}
+
+.logo-header-desktop, .logo-header-mobile{
+    width: 60px;
+    height: 100%;
+    background: url(./images/Ico_Vivo.png) no-repeat center center;
+}
+
+.logo-header-mobile{
+    display: none;
+}
+
+.sidebarCollapse-mobile{
+    display: none;
+}
+
+.footer {
+    height: 68px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f6f6f6;
+    color: rgb(156, 156, 156);
+ }
+
+ .logo-footer{
+    width: 200px;
+    height: 100%;
+    float: right;
+    background: url(./images/vivo-telefonica.png) no-repeat center center;
+}
+
+.leftNav{
+    padding-left: 0;
+    z-index: 1;
+}
+
+.navbar {
+    padding: 15px 10px;
+    background: #204b67 !important;
+    border: none;
+    border-radius: 0;
+    width: 100%;
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
+i,
+span {
+    display: inline-block;
+}
+
+/* ---------------------------------------------------
+    TOPNAVBAR STYLE
+----------------------------------------------------- */
+
+.navbar-light .navbar-nav .nav-link{
+    color: #fff !important;
+}
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+.wrapper .col-sm {
+    padding: 0 !important; 
+    margin: 0 !important; 
+}
+
+#sidebar {
+    min-width: 80px;
+    max-width: 80px;
+    height: 100%;
+    background: #067486;
+    background-image: linear-gradient(#067486, #02252b);
+    color: #fff;
+    transition: all 0.3s;
+    position: fixed; 
+    top: 70px;
+}
+
+#sidebar.active {
+    min-width: 250px;
+    max-width: 250px;
+    text-align: center;
+}
+
+#sidebar.active .sidebar-header h3,
+#sidebar.active .CTAs {
+    display: none;
+}
+
+#sidebar.active .sidebar-header strong {
+    display: block;
+}
+
+#sidebar ul li a {
+    text-align: left;
+}
+
+#sidebar.active ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+    text-align: left;
+}
+
+#sidebar.active ul li a i {
+    margin-right: 0;
+    display: block;
+    font-size: 1.8em;
+    margin-bottom: 5px;
+}
+
+#sidebar.active ul ul a {
+    padding: 10px !important;
+}
+
+#sidebar.active .dropdown-toggle::after {
+    top: auto;
+    bottom: 10px;
+    right: 50%;
+    -webkit-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    transform: translateX(50%);
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #067486;
+    text-align: start;
+}
+
+#sidebar .sidebar-header strong {
+    display: none;
+    font-size: 1.8em;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #067486;
+}
+
+#sidebar ul li a {
+    font-size: 0.85em;
+    display: block;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+#sidebar ul li a:hover {
+    color: #067486;
+    background: #fff;
+}
+
+#sidebar ul li a i {
+    margin-right: 10px;
+}
+
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+    color: #fff;
+    background: #067486;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #6d7fcc;
+}
+
+ul.CTAs {
+    padding: 20px;
+}
+
+ul.CTAs a {
+    text-align: center;
+    font-size: 0.9em !important;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+a.download {
+    background: #fff;
+    color: #7386D5;
+}
+
+a.article,
+a.article:hover {
+    background: #6d7fcc !important;
+    color: #fff !important;
+}
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+.main-content{
+    padding: 90px 0;
+}
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
+@media (max-width: 768px) {
+    .ml-auto, .mx-auto {
+        margin-left: auto !important;
+    }
+
+    .logo-header-desktop, .sidebarCollapse-desktop{
+        display: none;
+    }
+
+    .logo-header-mobile{
+        display: block;
+        margin-right: 10px;
+        height: 60px;
+    }
+
+    .logo-footer{
+        height: 38px;
+    }
+    
+    .sidebarCollapse-mobile{
+        display: block;
+    }
+
+    .main-content{
+        padding: 90px 15px;
+        background-color: yellowgreen;
+    }
+
+    #sidebar {
+        min-width: 80px;
+        max-width: 80px;
+        text-align: center;
+        margin-left: -80px !important;
+        top: 92px;
+    }
+    .dropdown-toggle::after {
+        top: auto;
+        bottom: 10px;
+        right: 50%;
+        -webkit-transform: translateX(50%);
+        -ms-transform: translateX(50%);
+        transform: translateX(50%);
+    }
+    #sidebar.active {
+        margin-left: 0 !important;
+    }
+    #sidebar .sidebar-header h3,
+    #sidebar .CTAs {
+        display: none;
+    }
+    #sidebar .sidebar-header strong {
+        display: block;
+    }
+    #sidebar ul li a {
+        padding: 20px 10px;
+    }
+    #sidebar ul li a span {
+        font-size: 0.85em;
+    }
+    #sidebar ul li a i {
+        margin-right: 0;
+        display: block;
+    }
+    #sidebar ul ul a {
+        padding: 10px !important;
+    }
+    #sidebar ul li a i {
+        font-size: 1.3em;
+    }
+    #sidebar {
+        margin-left: 0;
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
+}
