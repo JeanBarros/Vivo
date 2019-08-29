@@ -5,12 +5,43 @@
 </asp:Content>
 <asp:Content ContentPlaceholderID="PlaceHolderMain" runat="server">
 <WebPartPages:SPProxyWebPartManager runat="server" id="spproxywebpartmanager"></WebPartPages:SPProxyWebPartManager>
+<style type="text/css">	
+.wrap {
+    width: 320px;
+    height: 192px;
+    padding: 0;
+    overflow: hidden;
+}
+iframe {
+    width: 1280px;
+    height: 786px;
+    border: 0;
+    -ms-transform: scale(0.25);
+    -moz-transform: scale(0.25);
+    -o-transform: scale(0.25);
+    -webkit-transform: scale(0.25);
+    transform: scale(0.25);
+    
+    -ms-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+}						
+</style>
 <div class="container-fluid">
 	<div class="row"> 
 	  <div class="col-sm-9">
 		  <div class="row">
-			  <div class="col-sm-4 small-column">        
-			  	<WebPartPages:WebPartZone id="g_AA7471658CFF40EAB08FB7D851CF9E78" runat="server" title="Zone 1"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>        
+			  <div class="col-sm-4 small-column">
+					<div class="wrap">
+						<WebPartPages:WebPartZone id="g_AA7471658CFF40EAB08FB7D851CF9E78" runat="server" title="Zone 1">
+							<ZoneTemplate></ZoneTemplate>
+						</WebPartPages:WebPartZone>
+					</div>
+					<!-- <div class="wrap">
+						<iframe class="frame" src="https://app.powerbi.com/view?r=eyJrIjoiMmYwZjk2Y2MtMjE1ZC00NGIyLTgzMzgtMTliNjMzNWE5NGY5IiwidCI6IjdjZDY3MjE0LTY5ZjEtNDU5OS05Njk4LWY1Y2MzMGNmNTYwMCJ9"></iframe>
+					</div>			  	         -->
 			  </div>
 			  <div class="col-sm-4 small-column">
 			      <WebPartPages:WebPartZone id="g_5F046B166CEE4187A8705410FBB1A0BF" runat="server" title="Zone 2"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
